@@ -1,0 +1,11 @@
+#!/bin/sh
+
+setxkbmap -layout us,ru -option grp:alt_shift_toggle &
+xrandr --output DP-1 --mode 1920x1080 --rate 165 &
+xwallpaper --zoom "$HOME/dotfiles/wallpaper/fon.jpg" &
+slstatus &
+picom --config ~/.config/picom/picom.conf &
+
+while true; do
+    dwm >/dev/null 2>&1
+done

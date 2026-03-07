@@ -1,0 +1,8 @@
+^\.git$
+^\.gitignore$
+^README\.md$
+^wallpaper$
+^images$
+^installation$
+^dwm\.desktop$
+^build$
