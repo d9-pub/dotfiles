@@ -1,0 +1,28 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "~/.config/fastfetch/logo/*.png",
+    "width": 20,
+    "height": 10
+  },
+  "modules": [
+    "packages",
+    "disk",
+    "memory",
+    "uptime",
+    {
+      "type": "swap",
+      "key": "Zram",
+      "format": "{used} / {total} ({percentage}) - zstd"
+    },
+    {
+      "type": "disk",
+      "key": "Age",
+      "folders": "/",
+      "format": "{days} days"
+    },
+    "break",
+    "colors"
+  ]
+}
